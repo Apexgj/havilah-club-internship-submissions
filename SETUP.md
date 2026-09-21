@@ -49,7 +49,7 @@ git config --global user.email "your@email.com"
 This is how you get the starter files onto your computer.
 
 ```bash
-git clone https://github.com/kingfavourjudah/havilah-club-internship-submissions.git
+git clone https://github.com/Havilah-Blockchain-Studios/havilah-club-internship-submissions.git
 cd havilah-club-internship-submissions
 ```
 
@@ -175,7 +175,7 @@ You are not inside the cloned folder. Run `cd havilah-club-internship-submission
 **"Permission denied (publickey)"**
 You need to set up SSH keys or use HTTPS. Run:
 ```bash
-git remote set-url origin https://github.com/kingfavourjudah/havilah-club-internship-submissions.git
+git remote set-url origin https://github.com/Havilah-Blockchain-Studios/havilah-club-internship-submissions.git
 ```
 
 **"Your branch is behind 'origin/main'"**
