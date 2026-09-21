@@ -1,0 +1,91 @@
+name: Week 3 — Submission Checks
+
+on:
+  push:
+    paths:
+      - 'week-3/**'
+      - '.github/workflows/week-3-checks.yml'
+  pull_request:
+    paths:
+      - 'week-3/**'
+
+jobs:
+  day-11:
+    name: Day 11 — Introduction to Python
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pytest
+        run: pip install pytest --quiet
+
+      - name: Run submission checks
+        run: pytest week-3/day-11-introduction-to-python/test_main.py -v
+
+  day-12:
+    name: Day 12 — Python Logic and Functions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pytest
+        run: pip install pytest --quiet
+
+      - name: Run submission checks
+        run: pytest week-3/day-12-python-logic-functions/test_main.py -v
+
+  day-13:
+    name: Day 13 — Working With Data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pytest
+        run: pip install pytest --quiet
+
+      - name: Run submission checks
+        run: pytest week-3/day-13-working-with-data/test_main.py -v
+
+  day-14:
+    name: Day 14 — Python and APIs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pytest requests --quiet
+
+      - name: Run submission checks
+        run: pytest week-3/day-14-python-apis/test_main.py -v
+
+  day-15:
+    name: Day 15 — Automation Project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pytest
+        run: pip install pytest --quiet
+
+      - name: Run submission checks
+        run: pytest week-3/day-15-automation-project/test_submission.py -v
